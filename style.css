@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+}
+.row_poster{
+    width: 500px;;
+    object-fit: contain;
+    max-height: 500px;
+    margin-right: 10px;
+    transition: transform 450ms;
+
+}
+.ROW_POSTORS{
+    display: flex;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.row_poster:hover{
+    transform: scale(1.08);
+
+}
+.ROW_POSTORS::-webkit-scrollbar{
+    display: none;
+}
+.row_posterlarge{
+    max-height:300px;
+}
+.row_posterlarge:hover{
+    transform: scale(1.09);
+}
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+}
+
+.netflixLogo {
+    /* grid-area: nt; */
+    object-fit: cover;
+    width: 100px;
+    max-height: 100%;
+
+    padding-left: 30px;
+    padding-top: 0px;
+}
+
+.netflixLogo img {
+    height: 35px;
+}
+
+#logo {
+    color: #E50914;
+    margin: 0;
+    padding: 0;
+}
+
+
+.bar {
+    padding: 0 40px;
+    position: relative;
+    height: 40px; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between main-nav and sub-nav */
+    background-color: #141414; /* Example background color */
+}
+
+.main-bar, .sub-bar {
+    display: flex;
+    align-items: center;
+}
+
+.main-bar a, .sub-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Adjust margin to fit within the reduced height */
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.main-bar a:hover, .sub-bar a:hover {
+    color:red;
+}
+
+.sub-bar {
+    margin-left: auto; /* Pushes sub-nav to the right */
+    position: relative;
+    left: 30px;
+    padding-bottom:0.5%;
+
+}
+
+.nav-logo {
+    margin-right: 0; /* Adjust margin to align with other nav items */
+}
+
+
+.banner{
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: white;
+    object-fit:contain ;
+    height:500px;
+}
+.banner_contents{
+    margin-left: 30px;
+    padding-top: 200px;
+    height: 200px;
+}
+.banner_tittle{
+    color: white;
+    font-size: 5rem;
+    font-weight:800;
+    padding-bottom: 1rem;
+
+}
+.banner_discritipon{
+    color:white;
+    width: 45rem;
+    line-height: 2;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 500px;
+    height: 180px;
+}
+.banner_button{
+    cursor:pointer;
+    color:#000;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius:  radius 0.2vm;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: rgba(51, 51, 51, 0.2);
+   
+}
+.banner_button:hover{
+    color: #fff;
+    background-color:transparent;
+    transition: all 0.2s;
+}
+.banner--fadeBottom{
+    margin-top:10px;
+    height:2rem;
+    background-image: linear-gradient(180deg,transparent, rgba(37,37,37,0.61),#111);
+
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    color:wheat;
+    margin: 10px;
+}
+
+.logos a {
+    padding: 10px;
+}
+
+.logo {
+    color: var(--dark);
+}
